@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 
-:root {
-  --white: #fff;
-  --black: #1c2b2d;
-  --light-blue: #005490;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -20,11 +14,19 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
+}
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #0060b6;
 }
 
 .container {
@@ -39,9 +41,10 @@ img {
 .generator {
   width: 30em;
   padding: 1em;
-  background-color: var(--light-blue);
+  background-color: var(--blue);
   color: var(--white);
   text-align: center;
+  border-radius: 15px;
 }
 
 .hex {
