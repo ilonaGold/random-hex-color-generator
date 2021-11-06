@@ -12,10 +12,9 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.5;
   height: 100vh;
-  overflow-y: hidden;
 }
 
 img {
@@ -25,22 +24,20 @@ img {
 
 :root {
   --white: #fff;
-  --black: #1c2b2d;
   --blue: #0060b6;
 }
 
 .container {
-  max-width: 80em;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .generator {
-  width: 30em;
-  padding: 1em;
+  width: 20em;
+  padding: 1.5em;
   background-color: var(--blue);
   color: var(--white);
   text-align: center;
@@ -52,14 +49,32 @@ img {
   margin-bottom: 1em;
 }
 
-.btn-generate {
+.btn {
   background-color: var(--white);
-  color: var(--black);
-  font-size: 2rem;
+  color: var(--blue);
+  font-size: 1.8rem;
   font-weight: 700;
-  padding: 1em 2em;
+  padding: 0.7em 1.4em;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   margin: 1em;
+}
+
+.btn:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  border: 3px solid var(--white);
+}
+
+@media (min-width: 1440px) {
+  .generator {
+    width: 22em;
+  }
+}
+
+@media (min-width: 1920px) {
+  .generator {
+    width: 28em;
+  }
 }
